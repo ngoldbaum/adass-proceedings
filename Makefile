@@ -1,7 +1,7 @@
-.PHONE : clean all
+.PHONY : clean all
 
 all :
-	latexmk
+	latexmk -pdfdvi
 
 clean:
-	rm *.aux *.bbl *.blg *.dvi *.pdf *.log *.out
+	rm -f *.aux *.bbl *.blg *.dvi *.pdf *.log *.out *.fls *.fdb_latexmk
